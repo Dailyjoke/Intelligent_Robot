@@ -1,0 +1,18 @@
+<launch>
+    <!-- Step 1: Start up Gazebo with TurtleBot3 world -->
+    <!-- roslaunchturtlebot3_gazebo turtlebot3_house.launch  -->
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch" />
+
+    <!-- Step 2: Start GMapping -->
+    <include file="$(find turtlebot3_slam)/launch/turtlebot3_gmapping.launch" />
+
+    <!-- Step 3: Start robot_state_publisher -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" />
+
+    <!-- Step 4: Start Rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" />
+
+    <!-- Step 5: Save the map -->
+    <node name="map_saver" pkg="map_server" type="map_saver" args="-f /home/bruce/test_ws/src/test_pkg/map/test" output="screen" />
+</launch>
+

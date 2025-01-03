@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/bruce/test_ws/devel/include/**",
+        "/home/bruce/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/bruce/test_ws/src/test_pkg/include/**",
+        "/home/bruce/catkin_ws/src/waterplus_map_tools/include/**",
+        "/home/bruce/catkin_ws/src/wpb_home/wpb_home_bringup/include/**",
+        "/home/bruce/catkin_ws/src/wpb_home/wpb_home_tutorials/include/**",
+        "/home/bruce/catkin_ws/src/wpb_home/wpbh_local_planner/include/**",
+        "/home/bruce/catkin_ws/src/wpr_simulation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
